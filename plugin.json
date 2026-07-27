@@ -1,0 +1,23 @@
+{
+  "main": "index.html",
+  "logo": "logo.png",
+  "preload": "preload.js",
+  "pluginSetting": {
+    "single": true,
+    "height": 480
+  },
+  "features": [
+    {
+      "code": "collapse",
+      "explain": "将选中文件夹内所有内容释放到父级目录，自动重命名去重，清理空壳",
+      "cmds": [
+        "一键释放目录",
+        {
+          "type": "files",
+          "fileType": "directory",
+          "label": "一键释放目录"
+        }
+      ]
+    }
+  ]
+}
