@@ -1,0 +1,40 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>一键释放目录</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="app">
+    <div id="header">
+      <h1>📁 一键释放目录</h1>
+      <span id="status-badge">就绪</span>
+    </div>
+    <div id="selected-folders">
+      <div id="folder-list-header">
+        <span>已选文件夹</span>
+        <span id="folder-count"></span>
+      </div>
+      <div id="folder-list">
+        <div class="drop-hint">拖拽文件夹到此处添加</div>
+      </div>
+    </div>
+    <div id="progress-area" class="hidden">
+      <div id="progress-current">
+        <span id="progress-folder-label"></span>
+        <span id="progress-file-label"></span>
+      </div>
+      <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+      <div id="progress-text"></div>
+    </div>
+    <div id="result-area" class="hidden"></div>
+    <div id="actions">
+      <button id="btn-clear" class="warning">清空</button>
+      <button id="btn-start" class="primary">开始塌缩</button>
+      <button id="btn-close" class="secondary">关闭</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
